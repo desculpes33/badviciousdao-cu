@@ -1,0 +1,8 @@
+BAD VICIOUS - MERCADO PAGO
+
+1. Envie a pasta deste projeto para um repositório Git (GitHub) e conecte o repositório ao Netlify. Deploy manual arrastando apenas index.html NÃO publica a função de pagamento.
+2. Netlify > Site configuration > Environment variables: crie MERCADO_PAGO_ACCESS_TOKEN com o Access Token de produção de sua conta Mercado Pago (não compartilhe publicamente).
+3. Faça novo deploy e teste com uma compra de baixo valor.
+4. O preço está definido no servidor em netlify/functions/create-preference.js como R$ 129,90 para cada um dos três modelos. Altere ali se mudar o preço da loja.
+5. Este checkout encaminha para o Mercado Pago. Não existe confirmação de pagamento automática nem atualização de estoque; antes de enviar pedidos, confira o pagamento aprovado diretamente na sua conta Mercado Pago.
+6. Para envio/frete e coleta de endereço, configure isso no Mercado Pago ou acrescente uma etapa de entrega antes de vender. O código atual não calcula frete nem coleta endereço.
